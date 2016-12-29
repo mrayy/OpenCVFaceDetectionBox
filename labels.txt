@@ -1,0 +1,9 @@
+92,112
+1 : negative
+2 : yaleB01
+3 : yaleB02
+4 : yaleB03
+5 : yaleB04
+6 : yaleB05
+7 : yaleB06
+8 : yamen
