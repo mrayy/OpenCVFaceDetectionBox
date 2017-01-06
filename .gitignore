@@ -4,3 +4,4 @@ training.xml
 training/positive
 training/*.pgm
 .DS_Store
+*.mp4

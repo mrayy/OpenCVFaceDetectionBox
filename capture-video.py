@@ -1,9 +1,4 @@
-"""Raspberry Pi Face Recognition Treasure Box
-Positive Image Capture Script
-Copyright 2013 Tony DiCola
 
-Run this script to capture positive images for training the face recognizer.
-"""
 import glob
 import os
 import sys
@@ -24,7 +19,8 @@ if __name__ == '__main__':
 	if(len(sys.argv)>1):
 		path=sys.argv[1]
 	path+='.mp4'
-	os.remove(path);
+	if os.path.exists(path):
+		os.remove(path);
 	fourcc = cv2.cv.CV_FOURCC(*'MP4V')
 	out = cv2.VideoWriter(path,fourcc, 20.0, (640,480))
 	cap = cv2.VideoCapture(0)

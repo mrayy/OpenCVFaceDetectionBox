@@ -1,9 +1,4 @@
-"""Raspberry Pi Face Recognition Treasure Box
-Face Detection Helper Functions
-Copyright 2013 Tony DiCola
 
-Functions to help with the detection and cropping of faces.
-"""
 import cv2
 
 import config

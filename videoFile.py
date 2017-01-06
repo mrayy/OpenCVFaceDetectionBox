@@ -1,15 +1,4 @@
-"""Raspberry Pi Face Recognition Treasure Box
-Webcam OpenCV Camera Capture Device
-Copyright 2013 Tony DiCola
 
-Webcam device capture class using OpenCV.  This class allows you to capture a
-single image from the webcam, as if it were a snapshot camera.
-
-This isn't used by the treasure box code out of the box, but is useful to have
-if running the code on a PC where only a webcam is available.  The interface is
-the same as the picam.py capture class so it can be used in the box.py code
-without any changes.
-"""
 import threading
 import time
 
@@ -30,7 +19,7 @@ class OpenCVVideo(object):
 		"""
 		# Open the camera.
 		self._camera = cv2.VideoCapture(path)
-		
+
 		if not self._camera.isOpened():
 			self._camera.open()
 

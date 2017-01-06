@@ -1,7 +1,4 @@
-"""Raspberry Pi Face Recognition Treasure Box
-Treasure Box Script
-Copyright 2013 Tony DiCola
-"""
+
 import cv2
 import sys
 import select
